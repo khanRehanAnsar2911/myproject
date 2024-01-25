@@ -1,0 +1,418 @@
+/* css reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*body styling*/
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    /* background: #140a46eb; */
+    background: #062032;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/*header section */
+header div.container {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+header div.container input[type="checkbox"] {
+    display: none;
+}
+
+header div.container label {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    display: none;
+}
+
+header div.container label>.fa-xmark {
+    display: none;
+}
+
+header div.container>a {
+
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+header div.container nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header div.container nav ul li a {
+    font-size: 1.2rem;
+    margin: 0px 10px;
+    color: white;
+}
+
+/* main section  */
+main #home {
+    max-width: 100%;
+    min-height: calc(100vh - 70px);
+    border-bottom: 1px solid white;
+}
+
+main #home div.container {
+    max-width: 80%;
+    min-height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+
+.m-t {
+
+    margin-top: 20px;
+}
+
+main #home div.container div.left>div.content>a {
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: lightgrey;
+    border-radius: 2px;
+    color: black;
+}
+
+#mydiv {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.light {
+    color: white;
+}
+
+main #home div.container div.right {
+    width: 45vw;
+    align-self: flex-start;
+    margin-top: 100px;
+}
+
+main #home div.container div.right .img-container {
+    max-width: 100%;
+    width: 300px;
+    height: 355px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+main #home div.container div.right .img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+/* about section styling  */
+#about {
+    max-width: 100%;
+    min-height: 500px;
+    padding: 10px;
+    display: flex;
+
+    flex-direction: column;
+    border-bottom: 1px solid white;
+}
+
+#about h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about .row {
+    display: flex;
+}
+
+#about .row .about-img-container {
+    width: 50vw;
+    min-height: 100%;
+    margin: -20px 0px 34px 0px;
+}
+
+#about .row .about-img-container img {
+    display: block;
+    width: 50%;
+    height: 350px;
+    margin: auto;
+}
+
+#about .about-content-container {
+    max-width: 50vw;
+    height: 100%;
+}
+
+#about .about-content-container h2 {
+    margin-bottom: 20px;
+}
+
+#about .about-content-container p {
+    font-size: 1.2rem;
+}
+
+/* Skills Section  */
+section#skills {
+    min-height: 350px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+section#skills h1 {
+    text-align: center;
+}
+
+section#skills div.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+    flex-wrap: wrap;
+}
+
+section#skills div.row .box {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#skills div.row .skills1 img {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+section#skills div.row .skills2 img {
+    width: 130px;
+    height: 130px;
+    margin-top: -11px;
+}
+
+section#skills div.row .skills3 img {
+    width: 140px;
+    height: 130px;
+    margin-top: -11px;
+}
+
+/* Projects Section  */
+#projects {
+    width: 100%;
+    min-height: 320px;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+#projects h1 {
+    text-align: center;
+
+}
+
+#projects div.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#projects div.row .box .project1:nth-child(1) {
+    width: 300px;
+    height: 250px;
+    border: 1px solid white;
+    background: url("/images/Screenshot(1).png") no-repeat center center/cover;
+    position: relative;
+    margin: 10px;
+}
+
+#projects div.row .box .project2:nth-child(1) {
+    width: 300px;
+    height: 250px;
+    border: 1px solid white;
+    background: url("/images/Screenshot(2).png") no-repeat center center/contain;
+    position: relative;
+    margin: 10px;
+}
+
+#projects div.row .box .project3:nth-child(1) {
+    width: 300px;
+    height: 250px;
+    border: 1px solid white;
+    background: url("/images/Screenshot(3).png") no-repeat center center/cover;
+    position: relative;
+    margin: 10px;
+}
+
+#projects div.row .box a {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 132px;
+    text-decoration: none;
+    color: #040404;
+    background-color: white;
+    padding: 5px;
+    border-radius: 2px
+}
+
+/*footer section*/
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+footer div.contact-icon {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+footer div.contact-icon a {
+    color: white;
+}
+
+footer div.copyright-container {
+    margin: 20px 0px;
+}
+
+@media screen and (max-width:983px) {
+    #about .about-content-container p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    nav {
+        position: fixed;
+        top: 0px;
+        right: -50vw;
+        height: 100vh;
+        width: 50vw;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: 1s all;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    nav ul li {
+        margin: 15px 0px;
+    }
+
+    header div.container label {
+        display: inline-block;
+    }
+
+    input[type="checkbox"]:checked~nav {
+        right: 0px;
+    }
+
+    input[type="checkbox"]:checked~label {
+        z-index: 2;
+    }
+
+    input[type="checkbox"]:checked~label>.fa-bars {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked~label>.fa-xmark {
+        display: block;
+    }
+    footer{
+        font-size:1rem;
+    }
+}
+
+@media screen and (max-width:725px) {
+    header div.container {
+        max-width: 95%;
+    }
+
+    header div.container>a {
+        font-size: 1.2rem;
+    }
+
+    header div.container nav ul li a {
+        font-size: 1rem;
+        margin: 0px 7px;
+    }
+
+    main #home div.container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        max-width: 90%;
+    }
+
+    #home div.container div.left {
+        align-self: center;
+        margin-top: 60px;
+
+    }
+
+    main #home div.container div.right {
+        width: 50vw;
+        align-self: center;
+        margin-top: 100px;
+    }
+
+    main #about .row {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    main #about .row .about-img-container {
+        width: 100vw;
+    }
+
+    main #skills {
+        padding: 10px;
+    }
+
+    main #about .row .about-content-container {
+        max-width: 95%;
+        margin: auto;
+        font-size: 1rem;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width:305px) {
+    main #home div.container .left {
+        align-self: flex-end;
+    }
+
+    main #home div.container div.right {
+        width: 60vw;
+    }
+
+    main #about .row .about-img-container img {
+        width: 60%;
+    }
+}
