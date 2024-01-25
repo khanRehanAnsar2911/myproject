@@ -1,0 +1,81 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: white;
+  /*background-color:#000;*/
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ff653b;
+}
+
+.form-container {
+  position: relative;
+  max-width: 90%;
+  width: 500px;
+  height: 50px;
+}
+
+.form-container input[type="text"] {
+  width: 80%;
+  height: 80%;
+  margin: 5px 2px;
+  outline: none;
+}
+
+.form-container .btn1 {
+  width: 15%;
+  height: 80%;
+  margin: 5px 0px;
+  background: black;
+  color: white;
+  border: none;
+}
+
+.Tasks {
+  position: relative;
+  max-width: 90%;
+  width: 500px;
+  height: auto;
+  padding: 2px;
+}
+
+.Tasks .task {
+  width: 100%;
+  height: 50px;
+  /* padding:5px; */
+  margin: 10px 0px;
+  color: black;
+  position: relative;
+}
+
+.Tasks .task span {
+  display: inline-block;
+  width: 79%;
+}
+
+.btn {
+  padding: 5px;
+  margin: 0px 3px;
+}
+
+@media screen and (max-width:500px) {
+  .Tasks .task span {
+    width: 55%;
+  }
+}
